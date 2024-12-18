@@ -12,7 +12,7 @@ import java.util.Map;
 public class User {
     @Id
     private String id;
-    private String mobileNumber;
+    private int mobileNumber;
     private String role;
     private String password;
     private String name;

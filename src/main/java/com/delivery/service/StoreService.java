@@ -11,6 +11,6 @@ public interface StoreService {
     List<Store> getAllStores();
     void deleteStore(String id);
     Store updateStore(String id,Store store);
-    List<Product> getProductsByStoreId(String id);
+    List<Product> getProductsByStoreId(String storeId);
 
 }

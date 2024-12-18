@@ -7,10 +7,15 @@ import java.util.List;
 
 public interface DeliveryPartnerService {
     DeliveryPartner createDeliveryPartner(DeliveryPartner deliveryPartner);
-    DeliveryPartner getDeliveryPartner(String id);
-    List<DeliveryPartner> getAllDeliveryPartner();
+
+    DeliveryPartner getDeliveryPartnerById(String id);
+
+    List<DeliveryPartner> getAllDeliveryPartners();
+
     DeliveryPartner updateDeliveryPartner(String id, DeliveryPartner deliveryPartner);
     void deleteDeliveryPartner(String id);
-    void assignDeliveryPartner(String OrderId, String deliveryPartnerId);
+
+    void assignOrderToDeliveryPartner(String orderId, String deliveryPartnerId);
+
     List<Order> getAssignedOrders(String deliveryPartnerId);
 }

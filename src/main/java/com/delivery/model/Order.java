@@ -20,4 +20,5 @@ public class Order {
     private String status; //PENDING, ACCEPTED, DISPATCHED, DELIVERED, CANCELED
     private Date orderDate;
     private Date DeliverDate;
+    private String deliveryPartnerId;
 }

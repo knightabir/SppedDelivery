@@ -9,9 +9,12 @@ public interface OrderService {
     Order getOrderById(String id);
     List<Order> getAllOrders();
     Order updateOrder(String orderId, Order order);
-    void deleteOrderById(String id);
-    List<Order> getOrdersByUserId(String userId);
-    List<Order> getOrderByStoreId(String storeId);
-    List<Order> getOrderByDeliveryPartner(String deliveryPartnerId);
 
+    void deleteOrder(String id);
+
+    List<Order> getOrdersByUserId(String userId);
+
+    List<Order> getOrdersByStoreId(String storeId);
+
+    List<Order> getOrdersByDeliveryPartnerId(String deliveryPartnerId);
 }
